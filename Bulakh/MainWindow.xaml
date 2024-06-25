@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bulakh"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Первое графическое приложение Bulakh G.A." Height="450" Width="800">
+	<Grid ToolTip="Кликните для возврата на предыдущую страницу">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="45"/>
 			<RowDefinition Height="*"/>
 			<RowDefinition Height="45"/>
 		</Grid.RowDefinitions>
 
-		<TextBlock Grid.Row="0" Text="Верхняя строка" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 		<Frame Grid.Row="1" Name="MainFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-		<TextBlock Grid.Row="2" Text="Нижняя строка" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<Label Grid.Row="2" Content="Разработчик: 1озИСИП-1623, Булах Георгий Александрович" 
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               Foreground="#FF8888F9" FontFamily="Arial" FontSize="16" FontWeight="Bold"/>
+
+		<Button Content="Назад"  HorizontalAlignment="Left" Margin="30,14,0,0" VerticalAlignment="Top" Width="75" Background="#FFE76464" FontFamily="Arial" FontWeight="Bold" Height="20" Foreground="White" UseLayoutRounding="False" BorderThickness="0" BorderBrush="#FFE76464" RenderTransformOrigin="0.5,0.5" ToolTip="Кликните для возврата на предыдущую страницу"/>
+		<Image Margin="735,8,29.6,7.8" Source="ll-doc_98485.ico" Stretch="Fill"/>
 	</Grid>
 </Window>
